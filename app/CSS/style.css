@@ -1,0 +1,61 @@
+
+
+.levelit{
+    position: absolute ;
+    top: 15%;
+    left: 79.5%; /* Set a specific width */
+}
+.icon-bar {
+    position: absolute;
+    left: 0px;
+    top: 66px;
+    width: 90px; /* Set a specific width */
+    height: 680px;
+    background-color: #222; /* Dark-grey background */
+}
+
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 7px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+}
+.glyphicon.glyphicon-eject {
+    font-size: 20px;
+}
+.title {
+    font-size: 12px; /* Increased font-size */
+    text-align: center;
+}
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: gray; /* Add an active/current color */
+}
+
+th {
+    background-color: #222;
+    color: white;
+    height: 45px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.name {
+    width: 150px;
+}
+.description {
+    width: 280px;
+}
+
+.price {
+    width: 104px;
+}
+
+.buttons {
+    width: 250px;
+}

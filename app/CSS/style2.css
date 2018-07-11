@@ -1,0 +1,117 @@
+.line {
+    display: inline-block;
+}
+
+.onoffswitch {
+    position: relative; width: 150px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 0px solid #999999; border-radius: 0px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 35px; padding: 0; line-height: 35px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Active";
+    padding-left: 19px;
+    background-color: #DB464B; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Inactive";
+    padding-right: 19px;
+    background-color: #DB464B; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 69px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 85px;
+    border: 0px solid #999999; border-radius: 0px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+
+
+.main {
+    position: absolute;
+    top: 66px;
+    left: 120px; /* Set a specific width */
+}
+
+.levelit{
+    /* position: absolute;
+    top: 25px;
+    left: 680px;  Set a specific width  */
+}
+.icon-bar {
+    position: absolute;
+    left: 0px;
+    top: 66px;
+    width: 90px; /* Set a specific width */
+    height: 680px;
+    background-color: #222; /* Dark-grey background */
+}
+
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 7px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+}
+.glyphicon.glyphicon-eject {
+    font-size: 20px;
+}
+.title {
+    font-size: 12px; /* Increased font-size */
+    text-align: center;
+}
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: gray; /* Add an active/current color */
+}
+
+th {
+    background-color: #222;
+    color: white;
+    height: 45px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.name {
+    width: 150px;
+}
+.description {
+    width: 280px;
+}
+
+.price {
+    width: 104px;
+}
+
+.buttons {
+    width: 250px;
+}
